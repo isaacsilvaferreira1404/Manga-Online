@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Isometra&display=swap');
+    * {
+    box-sizing: border-box; /* Aumenta a altura e a largura de caixa de elementos*/
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #080808;/*mudar a cor do fundo do site*/
+    color: #ffff; /*mudar a cor da fonte*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/*Cabeçalho*/
+.header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.h1{
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(226, 102, 14);
+  font-size: 40px;
+}
+
+.banner-container{
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px #fc7b03;
+    max-width: 500px;
+    width: 100%;
+}
+
+.reader-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    width: 100%;
+}
+
+.page-wrapper{
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #fc7b03;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.page-wrapper img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    gap: 15px;
+}
+
+.btn{
+    background-color: #fc7b03;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn:hover{
+    background: #793a02;
+}
+
+.bnt:active{
+    transform:scale(0.98);
+}
+
+.btn:disabled{
+    background-color: #4444;
+    color: #888;
+    cursor: not-allowed;
+}
+
+.page-counter{
+    font-size: 1rem;
+    font-weight: 500;
+}
